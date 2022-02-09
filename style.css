@@ -1,0 +1,584 @@
+/* Font files */
+@font-face
+{
+    font-family: "Selawik";
+    src: url(./assets/fonts/selawk.woff);
+}
+
+@font-face
+{
+    font-family: "Selawik Semibold";
+    src: url(./assets/fonts/selawksb.woff);
+}
+
+@font-face
+{
+    font-family: "Selawik Semilight";
+    src: url(./assets/fonts/selawksl.woff);
+}
+
+@font-face
+{
+    font-family: "Noto Sans";
+    src: url(./assets/fonts/notosansl.woff);
+}
+
+/* Add smooth scrolling as well as scrollbar styling to the page. */
+html, body 
+{
+    scrollbar-color: rgba(209, 213, 218, 0.6) transparent;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(209, 213, 218, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a2a4;
+}
+
+/* Styling for devices with viewport width at least 960px. */
+@media (min-width: 960px)
+{
+    body
+    {
+        margin: 8rem auto;
+        font-family: "Selawik", "Segoe UI", sans-serif;
+        width: 750px;
+    }
+    
+    a
+    {
+        color: #d1d5da;
+        text-decoration: None;
+        transition: color 0.5s;
+    }
+    
+    a:hover
+    {
+        color: #6a737d;
+    }
+    
+    header
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
+    }
+    
+    #homepage-text
+    {
+        margin: 0 0 12px;
+        color: #14213d;
+        letter-spacing: -2px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 52px;
+        transition: color 0.5s;
+    }
+    
+    #homepage-text:hover
+    {
+        color: #6a737d;
+    }
+    
+    #profile-image
+    {
+        width: 100%;
+        transition: 1s;
+    }
+    
+    #profile-image:hover
+    {
+        opacity: 0.7;
+    }
+    
+    #profile-link-container
+    {
+        margin: 112px 0 0;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px;
+        text-decoration: None;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    .header-icons
+    {
+        font-size: 18px;
+    }
+    
+    nav
+    {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    nav > a
+    {
+        margin: 18px 54px;
+        color: #4b5563;
+        text-decoration: None;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 15px;
+        transition: color 0.5s;
+    }
+    
+    #content
+    {
+        margin: 24px 0;
+    }
+    
+    #content h2
+    {
+        margin-bottom: 6px;
+        color: #c1c1c1;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    section
+    {
+        margin: 56px 0;
+    }
+    
+    .entry-container-without-margin
+    {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    
+    .entry-container-with-margin
+    {
+        margin: 0 0 28px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    
+    .project-entry
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    .subsection-title
+    {
+        margin: 0 0 8px;
+        color: #14213d;
+        letter-spacing: -0.5px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 24px;
+    }
+    
+    .subsection-title a
+    {
+        color: #14213d;
+    }
+    
+    .subsection-title a:hover
+    {
+        color: #6a737d;
+    }
+    
+    .short-info, .date
+    {
+        margin: 0;
+        color: #a8a8a8;
+        line-height: 24px;
+        font-family: "Selawik Semilight", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    .description-item
+    {
+        line-height: 28px;
+    }
+    
+    .logo
+    {
+        width: 100%;
+    }
+    
+    .skills-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .programming-skill
+    {
+        padding: 8px 16px;
+        background-color: #f5d20a;
+        color: #ffffff;
+        border-radius: 10px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    .communication-skill
+    {
+        padding: 8px 16px;
+        background-color: #e5e5e5;
+        color: #14213d;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #logo-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    footer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        padding: 2rem 2rem 0;
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    footer *
+    {
+        color: #d1d5da;
+        transition: color 1s;
+        font-size: 28px;
+    }
+    
+    footer *:hover
+    {
+        color: #6a737d;
+    }
+    
+    #jump-to-top
+    {
+        position: fixed;
+        bottom: 16%;
+        right: 8%;
+        background-color: rgba(20, 33, 61, 0.9);
+        transition: all 0.3s;
+        text-decoration: None;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    #jump-to-top:hover
+    {
+        background-color: rgba(20, 33, 61, 0.6);
+    }
+    
+    #jump-to-top-button
+    {
+        color: #ffffff;
+        font-size: 24px;
+    }
+}
+
+/* Styling for devices with viewport width at most 959px. This is a workaround for a
+Windows-specific @media issue when the viewport width is at exactly 959px. */
+@media not all and (min-width: 960px)
+{
+    body
+    {
+        margin: 0 0 3rem;
+        text-align: center;
+        font-family: "Selawik", "Segoe UI", sans-serif;
+    }
+    
+    a
+    {
+        color: #d1d5da;
+        text-decoration: None;
+        transition: color 0.5s;
+    }
+    
+    a:hover
+    {
+        color: #6a737d;
+    }
+    
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header-text-info-container
+    {
+        margin: 72px auto 0;
+        order: 1;
+    }
+    
+    #homepage-text
+    {
+        margin: 0 0 12px;
+        color: #14213d;
+        letter-spacing: -2px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 52px;
+        transition: color 0.5s;
+    }
+
+    #homepage-text:hover
+    {
+        color: #6a737d;
+    }
+    
+    #profile-image
+    {
+        order: 0;
+        width: 100%;
+        transition: 1s;
+    }
+    
+    #profile-image:hover
+    {
+        opacity: 0.7;
+    }
+    
+    #profile-link-container
+    {
+        margin: 112px 0 0;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px;
+        text-decoration: None;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    
+    .header-icons
+    {
+        font-size: 18px;
+    }
+    
+    nav
+    {
+        margin: 64px auto 0;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    nav > a
+    {
+        margin: 14px 54px;
+        color: #4b5563;
+        text-decoration: None;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 15px;
+        transition: color 0.5s;
+    }
+    
+    #content
+    {
+        margin: 24px 0;
+    }
+    
+    #content h2
+    {
+        margin-bottom: 6px;
+        color: #c1c1c1;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    section
+    {
+        margin: 56px auto 0;
+        width: 88%;
+    }
+    
+    .entry-container-without-margin
+    {
+        margin: 14px auto;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entry-info-container
+    {
+        margin: 24px 0 0;
+        order: 1;
+    }
+    
+    .entry-container-with-margin
+    {
+        margin: 0 auto 28px;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-entry
+    {
+        margin: auto auto 52px;
+    }
+    
+    .subsection-title
+    {
+        margin: 0 auto 10px;
+        color: #14213d;
+        letter-spacing: -0.5px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 24px;
+    }
+    
+    .subsection-title a
+    {
+        color: #14213d;
+    }
+    
+    .subsection-title a:hover
+    {
+        color: #6a737d;
+    }
+    
+    .project-title
+    {
+        margin-bottom: 6px;
+    }
+    
+    .short-info, .date
+    {
+        margin: auto;
+        color: #a8a8a8;
+        line-height: 24px;
+        font-family: "Selawik Semilight", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    .description-item
+    {
+        text-align: left;
+        line-height: 28px;
+    }
+    
+    .logo
+    {
+        margin: auto;
+        order: 0;
+        width: 55%;
+    }
+    
+    .skills-container
+    {
+        margin: 14px 0 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .programming-skill
+    {
+        padding: 8px 16px;
+        background-color: #f5d20a;
+        color: #ffffff;
+        border-radius: 10px;
+        font-family: "Selawik Semibold", "Segoe UI", sans-serif;
+        font-size: 14px;
+    }
+    
+    .communication-skill
+    {
+        padding: 8px 16px;
+        background-color: #e5e5e5;
+        color: #14213d;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #logo-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    footer
+    {
+        margin: auto;
+        width: 88%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        padding: 2rem 0 0;
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    footer *
+    {
+        color: #d1d5da;
+        transition: color 1s;
+        font-size: 28px;
+    }
+    
+    footer *:hover
+    {
+        color: #6a737d;
+    }
+    
+    #jump-to-top
+    {
+        position: fixed;
+        bottom: 10%;
+        right: 8%;
+        background-color: rgba(20, 33, 61, 0.9);
+        transition: all 0.3s;
+        text-decoration: None;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    #jump-to-top:hover
+    {
+        background-color: rgba(20, 33, 61, 0.6);
+    }
+    
+    #jump-to-top-button
+    {
+        color: #ffffff;
+        font-size: 24px;
+    }
+}
+
+/* Accented Color */
+.accent {
+    color: #307c7c !important;
+}
+
+/* About Text */
+#about h1{
+    font-weight: lighter;
+}
